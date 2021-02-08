@@ -27,8 +27,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.comettaildev.posshop.Screens.Auth.login.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:name="com.comettaildev.posshop.screens.auth.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="br.com.uol.pagseguro.PAYMENT" />

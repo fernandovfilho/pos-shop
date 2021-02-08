@@ -1,4 +1,4 @@
-package com.comettaildev.posshop.Services
+package com.comettaildev.posshop.services
 
 import android.content.Context
 import com.android.volley.DefaultRetryPolicy

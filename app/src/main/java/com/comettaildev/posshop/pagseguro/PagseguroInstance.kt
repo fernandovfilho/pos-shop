@@ -1,4 +1,4 @@
-package com.comettaildev.posshop.Pagseguro
+package com.comettaildev.posshop.pagseguro
 
 import android.app.Application
 import android.content.Context

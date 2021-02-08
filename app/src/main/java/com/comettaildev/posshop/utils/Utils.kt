@@ -1,4 +1,4 @@
-package com.comettaildev.posshop.Utils
+package com.comettaildev.posshop.utils
 
 import android.graphics.Bitmap
 import android.graphics.Canvas

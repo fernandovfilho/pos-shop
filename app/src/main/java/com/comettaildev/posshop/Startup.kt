@@ -7,8 +7,8 @@ import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Environment
 import android.util.Log
-import com.comettaildev.posshop.Pagseguro.PagseguroInstance
-import com.comettaildev.posshop.Utils.Utils
+import com.comettaildev.posshop.pagseguro.PagseguroInstance
+import com.comettaildev.posshop.utils.Utils
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.MultiplePermissionsReport
 import com.karumi.dexter.PermissionToken

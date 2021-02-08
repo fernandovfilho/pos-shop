@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import com.comettaildev.posshop.Screens.Auth.login.LoginActivity
+import com.comettaildev.posshop.screens.auth.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
