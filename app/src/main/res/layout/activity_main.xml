@@ -4,21 +4,65 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/buttonSignIn"
+    <LinearLayout
         android:layout_width="0dp"
-        android:layout_height="@dimen/button_default_height"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@color/colorAccent"
-        android:text="@string/action_sign_in_short"
-        android:textColor="@color/design_default_color_background"
-        android:textSize="@dimen/button_default_text_size"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginVertical="50dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_iconfinder_rounded___high_ultra_colour06___shopping_bag_2250028" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/start_welcome"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLight"
+            android:textSize="30sp" />
+
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height"
+            android:background="@drawable/button_rounded_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/action_sign_in_short"
+            android:textAllCaps="false"
+            android:textColor="@color/backgroundColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:fontFamily="@font/roboto_light"
+            android:text="@string/login_not_have_account"
+            android:textAlignment="center"
+            android:textColor="@color/colorTextLight"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/loading_overlay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

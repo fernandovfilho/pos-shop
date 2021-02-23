@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    android:orientation="vertical"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    tools:context=".screens.auth.login.LoginActivity">
+    tools:context=".screens.auth.createAccount.CreateAccountActivity">
 
 
     <LinearLayout
@@ -29,7 +22,7 @@
             android:id="@+id/backButton"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="50dp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_action_name" />
 
@@ -39,13 +32,13 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="50dp"
             android:fontFamily="@font/roboto_light"
-            android:text="@string/login_title"
+            android:text="@string/create_account_title"
             android:textAlignment="center"
             android:textColor="@color/colorTextLight"
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/editTextEmail"
             android:layout_width="match_parent"
             android:layout_height="@dimen/button_default_height"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
@@ -60,14 +53,47 @@
             android:textColorHint="@color/colorLightBorder" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="@dimen/button_default_height"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
             android:background="@drawable/edittext_rounded_shape"
             android:ems="10"
             android:fontFamily="@font/roboto"
+            android:hint="@string/prompt_name"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorTextLight"
+            android:textColorHint="@color/colorLightBorder" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/edittext_rounded_shape"
+            android:drawableRight="@drawable/ic_visibility_24px"
+            android:drawableTint="@color/colorTextLight"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
             android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="@color/colorTextLight"
+            android:textColorHint="@color/colorLightBorder" />
+
+        <EditText
+            android:id="@+id/editTextPasswordConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_default_height"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:background="@drawable/edittext_rounded_shape"
+            android:drawableRight="@drawable/ic_visibility_24px"
+            android:drawableTint="@color/colorTextLight"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/prompt_password_confirm"
             android:inputType="textPassword"
             android:padding="12dp"
             android:textColor="@color/colorTextLight"
@@ -79,21 +105,10 @@
             android:layout_height="@dimen/button_default_height"
             android:background="@drawable/button_rounded_shape"
             android:fontFamily="@font/roboto"
-            android:text="@string/action_sign_in_short"
+            android:text="@string/action_sign_up_short"
             android:textAllCaps="false"
             android:textColor="@color/backgroundColor"
             android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/createNewAccount"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="30dp"
-            android:fontFamily="@font/roboto"
-            android:text="@string/login_not_have_account"
-            android:textAlignment="center"
-            android:textColor="@color/colorTextLight"
-            android:textSize="20sp" />
 
 
     </LinearLayout>
@@ -101,4 +116,3 @@
     <include layout="@layout/loading_overlay" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
